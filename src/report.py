@@ -1,9 +1,11 @@
 import os
+import json
 
 import pandas as pd
 
 from data.metrics import *
 from data.processing import *
+from data.utils import NumpyEncoder
 
 
 if __name__ == "__main__":
@@ -60,6 +62,9 @@ if __name__ == "__main__":
     report = ""
     with open('resources/template/report.html', 'r') as file:
         report = file.read()
+
+    with open('resources/metrics_example.json', 'w') as file:
+        json.dump(result, file, indent=2, cls=NumpyEncoder)
 
     for k1, v1 in result.items():
         if v1 is None:

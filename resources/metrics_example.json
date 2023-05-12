@@ -1,0 +1,13 @@
+{
+  "active_users": {
+    "total": 17,
+    "active": 9,
+    "inactive": 8
+  },
+  "used_tables": {
+    "total": 71,
+    "active": 39,
+    "inactive": 32
+  },
+  "used_aps": null
+}
