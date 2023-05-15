@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./static/build/_assets/output-FVIIMFRE.css">
   </head>
   <body class="bg-grey-2">
-    <div>
+    <div id="app">
       <div class="flex min-h-screen  flex-col">
         <div class="flex-1">
           <div class="bg-grey-2">
@@ -85,7 +85,7 @@
                                       </svg>
                                     </button>
                                   </div>
-                                  <div class="text-blue-12">{{active_users.active}} of the {{active_users.total}} users with access are active</div>
+                                  <div id="active_users" class="text-blue-12">{{active_users.active}} of the {{active_users.total}} users with access are active</div>
                                 </div>
                               </div>
                               <div class="col-span-12 m:col-span-4">
@@ -106,7 +106,7 @@
                                       </svg>
                                     </button>
                                   </div>
-                                  <div class="text-violet-12">{{used_tables.active}} of the {{used_tables.total}} tables are read</div>
+                                  <div id="used_tables" class="text-violet-12">{{used_tables.active}} of the {{used_tables.total}} tables are read</div>
                                 </div>
                               </div>
                               <div class="col-span-12 m:col-span-4">
@@ -127,7 +127,7 @@
                                       </svg>
                                     </button>
                                   </div>
-                                  <div class="text-plum-12">{{used_aps.active}} of the {{used_aps.total}} access providers are used</div>
+                                  <div id="used_aps" class="text-plum-12">{{used_aps?.active}} of the {{used_aps?.total}} access providers are used</div>
                                 </div>
                               </div>
                             </div>
@@ -915,6 +915,23 @@
     <link rel="modulepreload" href="./static/build/_shared/chunk-TDB7LBMW.js">
     <link rel="modulepreload" href="./static/build/_shared/chunk-YASOZUF5.js">
     <link rel="modulepreload" href="./static/build/routes/__dashboard/__boundary/index-7X7EOXIV.js">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      const { createApp } = Vue
+      fetch("../metrics_example.json")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) =>{
+            createApp({
+              data() {
+                return {
+                   ...data
+                }
+              }
+          }).mount('#app')
+        });
+    </script>
     <script>window.ENV = {"build_version":"OllRw9sVF9itJSTN7MF8uQ==","NODE_ENV":"production"}</script><span id="recharts_measurement_span" aria-hidden="true" style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; border: none; white-space: pre;">25K</span>
     <div id="a11y-status-message" role="status" aria-live="polite" aria-relevant="additions text" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"></div>
   </body>
