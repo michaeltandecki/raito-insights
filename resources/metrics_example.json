@@ -9,5 +9,269 @@
     "active": 39,
     "inactive": 32
   },
-  "used_aps": null
+  "used_aps": {
+    "total": 35,
+    "active": 14,
+    "inactive": 21
+  },
+  "data_usage-data_source": [
+    {
+      "name": "BigQuery",
+      "queries": 68451
+    },
+    {
+      "name": "Global Snowflake",
+      "queries": 17561
+    }
+  ],
+  "data_usage-user": [
+    {
+      "name": "data-engineer@bq-demodata.iam.gserviceaccount.com",
+      "queries": 12151
+    },
+    {
+      "name": "data-engineer-sync@bq-demodata.iam.gserviceaccount.com",
+      "queries": 35648
+    },
+    {
+      "name": "Dustin Hayden",
+      "queries": 15844
+    },
+    {
+      "name": "Mary Carissa",
+      "queries": 12645
+    },
+    {
+      "name": "Benjamin Stewart",
+      "queries": 7541
+    }
+  ],
+  "access_coverage": [
+    {
+      "user": "Bart",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 1.0
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 1.0
+        },
+        {
+          "name": "Total",
+          "fraction": 1.0
+        }
+      ]
+    },
+    {
+      "user": "Benjamin Stewart",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 0.55
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 1.0
+        },
+        {
+          "name": "Total",
+          "fraction": 0.77
+        }
+      ]
+    },
+    {
+      "user": "Dustin Hayden",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 0.46
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 1.0
+        },
+        {
+          "name": "Total",
+          "fraction": 0.73
+        }
+      ]
+    },
+    {
+      "user": "Mary Carissa",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 0.37
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 1.0
+        },
+        {
+          "name": "Total",
+          "fraction": 0.68
+        }
+      ]
+    },
+    {
+      "user": "Data Engineer service account",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 1.0
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 0.0
+        },
+        {
+          "name": "Total",
+          "fraction": 0.5
+        }
+      ]
+    }
+  ],
+  "access_usage": [
+    {
+      "user": "Vladimir Scarlet Stein",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 0.85
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 0.0
+        },
+        {
+          "name": "Total",
+          "fraction": 0.85
+        }
+      ]
+    },
+    {
+      "user": "data-engineer-sync@bq-demodata.iam.gserviceaccount.com",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 0.0
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 0.48
+        },
+        {
+          "name": "Total",
+          "fraction": 0.48
+        }
+      ]
+    },
+    {
+      "user": "data-engineer@bq-demodata.iam.gserviceaccount.com",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 0.0
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 0.42
+        },
+        {
+          "name": "Total",
+          "fraction": 0.42
+        }
+      ]
+    },
+    {
+      "user": "Data Engineer service account",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 0.34
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 0.0
+        },
+        {
+          "name": "Total",
+          "fraction": 0.34
+        }
+      ]
+    },
+    {
+      "user": "Dustin Hayden",
+      "dataSources": [
+        {
+          "name": "Global Snowflake",
+          "fraction": 1.0
+        },
+        {
+          "name": "BigQuery",
+          "fraction": 0.03
+        },
+        {
+          "name": "Total",
+          "fraction": 0.34
+        }
+      ]
+    }
+  ],
+  "data_usage_table-access-providers": [
+    {
+      "name": "datasource_bq-demodata_roles_bigquery.jobUser",
+      "queries": 178521,
+      "lastUsed": 1684349897
+    },
+    {
+      "name": "dataset_bq-demodata.MASTER_DATA_roles_owner",
+      "queries": 167301,
+      "lastUsed": 1684349897
+    },
+    {
+      "name": "datasource_bq-demodata_roles_bigquery.dataViewer",
+      "queries": 119860,
+      "lastUsed": 1684349897
+    },
+    {
+      "name": "datasource_bq-demodata_roles_bigquery.dataOwner",
+      "queries": 35442,
+      "lastUsed": 1684349897
+    },
+    {
+      "name": "_bq-demodata.MASTER_DATA.Production_TransactionHistory_roles_bigquery.dataViewer",
+      "queries": 10499,
+      "lastUsed": 1684349897
+    }
+  ],
+  "data_usage_table-tables": [
+    {
+      "name": "Production_TransactionHistory",
+      "queries": 10499,
+      "lastUsed": 1684349897
+    },
+    {
+      "name": "Production_Location",
+      "queries": 10131,
+      "lastUsed": 1684329897
+    },
+    {
+      "name": "Production_ProductListPriceHistory",
+      "queries": 10131,
+      "lastUsed": 1684348897
+    },
+    {
+      "name": "Sales_SalesOrderHeader",
+      "queries": 9896,
+      "lastUsed": 1684343897
+    },
+    {
+      "name": "Production_ProductDocument",
+      "queries": 9363,
+      "lastUsed": 1684348897
+    }
+  ]
 }
